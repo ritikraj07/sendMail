@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Reset</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        max-width: 100px;
+        height: auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: #666666;
+        line-height: 1.6;
+      }
+
+      .otp {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 30px;
+        letter-spacing: 10px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .footer {
+        margin-top: 40px;
+        text-align: center;
+        color: #999999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/HinduSwastika.svg/1003px-HinduSwastika.svg.png"
+          alt="company logo"
+        />
+      </div>
+      <h1>Password Reset</h1>
+      <p>Hello,</p>
+      <span id="user_name"></span>
+      <p>
+        We received a request to reset your password. Your one-time password
+        (OTP) is:
+      </p>
+      <p class="otp"><span id="otpPlaceholder">123456</span></p>
+      <p>Please use this OTP to reset your password.</p>
+      <p>If you didn't request this, you can safely ignore this email.</p>
+      <p>
+        Best regards,<br />
+        <span id="company_name"></span>
+      </p>
+      <div class="footer">
+        <p>
+          If you have any questions, contact us at
+          <!-- Add your email address here -->
+          <span id="company_email_id"></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
